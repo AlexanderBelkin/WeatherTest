@@ -3,6 +3,8 @@ package com.dev.weathertest.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Arrays;
+
 public class WeatherResp {
 
     @SerializedName("coord")
@@ -105,7 +107,7 @@ public class WeatherResp {
     public String toString() {
         return "WeatherResp{" +
                 "coord=" + coord +
-                ", weather=" + weather +
+                ", weather=" + Arrays.toString(weather) +
                 ", main=" + main +
                 '}';
     }
